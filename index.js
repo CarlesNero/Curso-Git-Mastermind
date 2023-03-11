@@ -26,7 +26,6 @@ const getCommentsForEachPost = async (posts) => {
 const renderHtml = (user, posts) => {
     const content = document.getElementById('content');
     content.innerHTML += `<h3>Posts del usuario ${user.email}</h3>`;
-    
     posts.forEach(post => {
       content.innerHTML += `
       <div class="post">
@@ -52,3 +51,7 @@ const getBlogContent = async () => {
 }
 
 getBlogContent();
+
+const loadAdds = () => {
+    console.log ("Adds loaded");
+}
